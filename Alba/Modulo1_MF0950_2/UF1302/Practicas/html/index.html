@@ -26,18 +26,137 @@
             <script src="js/funciones.js"></script> <!-- Carga dento de la carpeta js el archivo .js -->
 
             
-        <base href="http://www.Alba.com/Modulo1_MF0950_2/UF1302/practicas/img/" target="_blank">
+        <!-- <base href="http://www.Alba.com/Modulo1_MF0950_2/UF1302/practicas/img/" target="_blank"> -->
         
         <link rel="icon" href="imagen.png" type="imagen/png">
         <link rel="icon" href="imagen.gif" type="imagen/gif">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+        <style> table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+              }
+        </style>
 </head>
 
 <body>
 
-    <h1>My First Heading</h1>
-        <p>My first paragraph.</p>
+     <center><h1>Introdución HTML</h1> </center>
+        <p>
+                <h2>What is HTML?</h2>
+                HTML is the standard markup language for creating Web pages. 
+            <ul style="list-style-type:square">
+              <li>HTML significa <em>Hyper Text Markup Language </em></li>  
+              <li>HTML describe la estructura de las páginas Web usando marcado</li>  
+              <li>elementos HTML son los bloques de construcción de páginas HTML</li>
+              <li>elementos HTML están representados por etiquetas</li> 
+              <li>HTML etiquetas de la etiqueta de piezas de contenido como <em> "mesa" "la partida", "párrafo" </em>, y así sucesivamente</li> 
+              <li>Los navegadores no muestran las etiquetas HTML, pero las usan para representar el contenido de la página</li></p>
+            </ul>
+            <h2> Estructura básica de un documento HTML</h2>
+        <div> 
+                <code>
+                    <hr/> 
+                    &lt;!DOCTYPE html&gt; <br>
+                    &lt;html lang="es-ES"&gt; <br>
+                    <br>
+                    &lt;head&gt; <br>
+                    &nbsp;&nbsp; &lt;title&gt;Page Title&lt;/title&gt;  <br>
+                    &nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;  <br>
+                    &lt;/head&gt; <br>
+                    <br>
+                    &lt;body&gt; <br>
+                    <br>
+                    &nbsp;&nbsp;&lt;h1&gt;My First Heading&lt;/h1&gt;  <br>
+                    &nbsp;&nbsp;&lt;p&gt;My first paragraph.&lt;/p&gt; <br>
+                    <br>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt; <br>  
+                    <hr/> 
+                </code>
+        </div>
+            <div>
+                
+                 <p>   <h3>Explicación de etiquetas básicas </h3> </p>
+                <ol type="I">
+                     <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> declaración define el tipo documento para ser HTML5</li>
+                     <li>La etiqueta <code>&lt;html&gt;</code> define el elemento raíz de una página HTML</li>
+                     <li>El atributo <code>lang="es-ES"</code> especifica el idioma del documento, va seguido de la etiqueta <code>&lt;html&gt;</code></li>
+                     <li>La etiqueta <code>&lt;head&gt;</code> define los metadatos que contiene información sobre el documento</li>
+                     <li>La etiqueta <code>&lt;meta charset="UTF-8"&gt;</code> define el estándar de codificación universal de caracteres, va dentro de head. </li>
+                     <li>La etiqueta <code>&lt;title&gt;</code> especifica un título para el documento</li>
+                     <li>La etiqueta <code>&lt;body&gt;</code> define el contenido visible de la página</li>
+                     <li>La etiqueta<code>&lt;h1&gt;</code> define un encabezado del texto</li>
+                     <li>La etiqueta <code>&lt;p&gt;</code> define un párrafo</li>
+                </ol>        
 
+                
+        </div>
+               
+        
+                <h4>Etiquetas HTML</h4>
+                <p>Las etiquetas HTML son los nombres de ekementos entre paréntesis angulares</p>
+        <div style="background-color:lightblue">
+                <br/>
+                  <p> <strong>&lt;Nombre de etiqueta&gt;</strong> contenido va aquí ... <strong>&lt;/etiqueta&gt;</strong></p>
+                <br/>
+        </div>
+        <div>   
+                <dl>
+                        <dt><b>Etiquetas HTML </b></dt> <dd>Normalmente vienen en pares como &lt;p&gt;y&lt;/p&gt;</dd>
+                        <dt><b>La primera etiqueta </b></dt> <dd>En un par es la etiqueta de inicio, la segunda etiqueta es la etiqueta de fin</dd>
+                        <dt><b>La etiqueta final </b></dt><dd>Se escribe igual que la etiqueta de inicio, pero con una barra inclinada insertada antes de que el nombre de la etiqueta</dd>
+                </dl>    
+        </div>    
+        <div>
+            <p> Consejo: La etiqueta de inicio también se llama la etiqueta de apertura y la etiqueta final de la etiqueta de cierre.</p>
+
+        </div>
+            <br>
+            <br>
+        <div>
+            <h5>Navegadores web</h5>
+                <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br>
+                El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
+                
+                <img src="img/imgpractica.png" alt="imagen navegador Chrome" width="635" height="361">
+                
+        </div>    
+            
+     <div>           
+            <h6>Versiones de HTML </h6>
+        <p> Desde los primeros días de la web, ha habido muchas versiones de HTML:</p>
+            <table style="width:30%"; text-align="left";
+                  
+                  >
+                    <tr>
+                        <th>Versión</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td> 
+                        <td>1991</td> 
+                    </tr>  
+                    <tr>
+                        <td>HTML 2.0</td>
+                        <td>1995</td>
+                    </tr> 
+                    <tr>
+                        <td>HTML 3.2</td>
+                        <td>1997</td>
+                    </tr>
+                    <tr>
+                        <td>XHTML</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>2014</td>
+                    </tr>
+            </table>
+              
+     </div>
+     <br>
+     <br>
+            <footer>Por Alba C.</footer>
 </body>
 </html>
