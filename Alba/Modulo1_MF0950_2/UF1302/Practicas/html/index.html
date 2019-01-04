@@ -22,7 +22,7 @@
             <script></script> <!-- para lso css y js dentro de la hoja de html no en carpetas externas al doc html-->
             
             <link href="css/style.css" rel="stylesheet"> <!-- cuando incorporamos los estilos a una carpeta diferente. Enlaza los doc.  Es una hoja de estilo (stylelesheet) que está ubicada dentro del doc style.css, dentro de la carpeta css-->
-           
+             <link rel="shortcut icon" href="batman.ico" type="image/x-icon">
             <script src="js/funciones.js"></script> <!-- Carga dento de la carpeta js el archivo .js -->
 
             
@@ -31,11 +31,54 @@
         <link rel="icon" href="imagen.png" type="imagen/png">
         <link rel="icon" href="imagen.gif" type="imagen/gif">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
         <style> table, th, td {
                 border: 1px solid black;
                 border-collapse: collapse;
               }
+                body {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                 }
+                 h1, h2, h3, h4, h6 {
+                     font-family: Arial, Helvetica, sans-serif
+                 }
+                div {  
+               /*  background-color: #f1f1f1;  */
+                margin: 20px; 
+                padding: 20px
+            }
+                .nota {
+                background-color: #ffffcc; 
+                border-left: 6px solid #ffeb3b;
+                margin-top: 16px;
+                margin-bottom: 16px;
+            } 
+                hr {
+                    border:1px solid #eeeeee;
+                             } 
+                code {
+                   color: crimson;
+                   background-color: #f1f1f1f1;
+                   padding-left: 4px;
+                   padding-right: 4px;
+                   font-size: 110%
+                }
+                .etiquetashtml{
+                   border: 1px solid #cccccc;
+                   background-color: #f1f1f1;
+                   font-size: 24px;
+                   padding: 16px;
+                }
         </style>
+        <script> </script>
+       <style>  #marco{
+                 border: 1px solid black;
+                 border-collapse: collapse;
+              }
+        </style>
+         
+         
+       
 </head>
 
 <body>
@@ -51,11 +94,12 @@
               <li>elementos HTML están representados por etiquetas</li> 
               <li>HTML etiquetas de la etiqueta de piezas de contenido como <em> "mesa" "la partida", "párrafo" </em>, y así sucesivamente</li> 
               <li>Los navegadores no muestran las etiquetas HTML, pero las usan para representar el contenido de la página</li></p>
-            </ul>
+            </ul>  
+            <hr>
             <h2> Estructura básica de un documento HTML</h2>
         <div> 
                 <code>
-                    <hr/> 
+                   
                     &lt;!DOCTYPE html&gt; <br>
                     &lt;html lang="es-ES"&gt; <br>
                     <br>
@@ -71,7 +115,7 @@
                     <br>
                     &lt;/body&gt; <br>
                     &lt;/html&gt; <br>  
-                    <hr/> 
+                    <hr> 
                 </code>
         </div>
             <div>
@@ -88,15 +132,16 @@
                      <li>La etiqueta<code>&lt;h1&gt;</code> define un encabezado del texto</li>
                      <li>La etiqueta <code>&lt;p&gt;</code> define un párrafo</li>
                 </ol>        
-
+        <div></div>
                 
         </div>
                
         
                 <h4>Etiquetas HTML</h4>
                 <p>Las etiquetas HTML son los nombres de ekementos entre paréntesis angulares</p>
-        <div style="background-color:lightblue">
-                <br/>
+        <!-- <div style="background-color:lightblue"> -->
+               <div class= etiquetashtml> 
+                    <br/>
                   <p> <strong>&lt;Nombre de etiqueta&gt;</strong> contenido va aquí ... <strong>&lt;/etiqueta&gt;</strong></p>
                 <br/>
         </div>
@@ -107,7 +152,7 @@
                         <dt><b>La etiqueta final </b></dt><dd>Se escribe igual que la etiqueta de inicio, pero con una barra inclinada insertada antes de que el nombre de la etiqueta</dd>
                 </dl>    
         </div>    
-        <div>
+        <div class="nota">
             <p> Consejo: La etiqueta de inicio también se llama la etiqueta de apertura y la etiqueta final de la etiqueta de cierre.</p>
 
         </div>
@@ -125,10 +170,10 @@
      <div>           
             <h6>Versiones de HTML </h6>
         <p> Desde los primeros días de la web, ha habido muchas versiones de HTML:</p>
-            <table style="width:30%"; text-align="left";
+            <table style="width:30%"
                   
                   >
-                    <tr>
+                    <tr align="left">
                         <th>Versión</th>
                         <th>Year</th>
                     </tr>
@@ -155,6 +200,32 @@
             </table>
               
      </div>
+     <br>
+     <br>
+     <br>
+    <div id="marco" style="background-color:lightgreen">&lt;html&gt;
+        <div id="marco2" style="background-color:rgb(203, 255, 203)">head 
+                <div>title</div>
+        </div>
+        <div id="marco3" style="background-color:rgb(203, 255, 203)">body
+            <div id="marco4"  style="background-color:rgb(232, 250, 227)">blanco
+                <div>h1</div>
+                <div>p</div>
+                <div>p</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+     <div class="nota">
+         <p>Nota: Solo el contenido dentro de la sección <code> &lt;code&gt;</code> (el área blanca arriba) se muestra en un navegador</p>
+     </div>
+     
+     
+     
+     
      <br>
      <br>
             <footer>Por Alba C.</footer>
