@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+        <title>Curso diseño paginas web</title>
+            <meta charset="UTF-8">
+           
+            <meta name="description" content="Diseño de páginas web con HTML,CSS"> <!-- Descripción pag web, para las busquedas de google -->
+            <meta name="keywords" content="HTML, CSS, XML, JavaScript"><!-- Palabras clave -->
+            <meta name="title" content="HTML, CSS, JavaScript"><!-- titulo que aparecerá en la busqueda -->
+
+            <meta name="name" content="Alba C.Angel"><!-- Definir al autor, sobretodo para blogs -->
+           
+            <meta http-equiv="refresh" content="30"><!-- actualizar pag cada30 seg -->
+         
+            <style> </style>
+            <!-- EJEMPLO: <style>
+                    body {background-color: powderblue;}
+                    h1 {color: red;}
+                    p {color: blue;}
+                  </style> -->
+            <script></script> <!-- para lso css y js dentro de la hoja de html no en carpetas externas al doc html-->
+            
+            <link href="css/style.css" rel="stylesheet"> <!-- cuando incorporamos los estilos a una carpeta diferente. Enlaza los doc.  Es una hoja de estilo (stylelesheet) que está ubicada dentro del doc style.css, dentro de la carpeta css-->
+             <link rel="shortcut icon" href="batman.ico" type="image/x-icon">
+            <script src="js/funciones.js"></script> <!-- Carga dento de la carpeta js el archivo .js -->
+
+            
+        <!-- <base href="http://www.Alba.com/Modulo1_MF0950_2/UF1302/practicas/img/" target="_blank"> -->
+        
+        <link rel="icon" href="imagen.png" type="imagen/png">
+        <link rel="icon" href="imagen.gif" type="imagen/gif">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+        <style> table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+              }
+                body {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    width: 80%;
+                    margin: 0 auto;
+                 }
+                 h1, h2, h3, h4, h6 {
+                     font-family: Arial, Helvetica, sans-serif
+                 }
+               
+                /* div {  
+                background-color: #f1f1f1;  
+                margin: 20px; 
+                padding: 20px
+                } */
+                
+                .nota {
+                background-color: #ffffcc; 
+                border-left: 6px solid #ffeb3b;
+                padding: 10px;
+                padding-bottom: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                
+                } 
+                hr {
+                    border:1px solid #eeeeee;
+                             } 
+                code {
+                   color: crimson;
+                   background-color: #f1f1f1f1;
+                   padding-left: 4px;
+                   padding-right: 4px;
+                   font-size: 110%
+                }
+                .etiquetashtml{
+                   border: 1px solid #cccccc;
+                   background-color: #f1f1f1;
+                   font-size: 24px;
+                   padding: 16px;
+                }
+                code span {
+                    color: mediumblue;
+                }
+                code span span {
+                    color: brown;
+                }
+                code span span span{
+                    color: crimson;
+                }
+
+                .code {
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color:#ffffff;
+                padding: 8px 12px;
+                border-left: 4px solid #4caf50;
+                color: black;
+                }
+                .ejemplo {
+                   background-color: grey;
+                   padding: 8px 16px;
+                   margin: 20px 0px;
+                   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16),0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                }
+        </style>
+        <script> </script>
+       <style>  /* .marco{
+                 border: 1px solid black;
+                 border-collapse: collapse;
+                                 
+              } */
+                 
+              
+        </style>
+         
+         
+       
+</head>
+
+<body>
+
+     <center><h1>Introdución HTML</h1> </center>
+        <p>
+                <h2>What is HTML?</h2>
+                HTML is the standard markup language for creating Web pages. 
+            <ul style="list-style-type:square">
+              <li>HTML significa <em>Hyper Text Markup Language </em></li>  
+              <li>HTML describe la estructura de las páginas Web usando marcado</li>  
+              <li>elementos HTML son los bloques de construcción de páginas HTML</li>
+              <li>elementos HTML están representados por etiquetas</li> 
+              <li>HTML etiquetas de la etiqueta de piezas de contenido como <em> "mesa" "la partida", "párrafo" </em>, y así sucesivamente</li> 
+              <li>Los navegadores no muestran las etiquetas HTML, pero las usan para representar el contenido de la página</li></p>
+            </ul>  
+            <hr>
+            <h2> Estructura básica de un documento HTML</h2>
+        <div class="ejemplo"> 
+            <h3>Ejemplo</h3> 
+            <div class="code">
+            <code>
+                   
+                <span>&lt;<span>!DOCTYPE <span>html</span></span>&gt;</span> <br>
+                <span>&lt;<span>html <span>lang="es-ES"</span></span>&gt;</span><br>
+                <br>
+                <span>&lt;<span>head</span>&gt;</span><br>
+                <span>&lt;<span>title</span>&gt;<span style="color: black;">Page Title</span>&lt;<span>/title</span>&gt;</span>  <br>
+                <span> &lt;<span>meta <span>charset="UTF-8"</span></span>&gt;</span>  <br>
+                <span>&lt;<span>/head</span>&gt; </span><br>
+                    <br>
+                <span>&lt;<span>body</span>&gt; </span><br>
+                    <br>
+                <span>&lt;<span>h1</span>&gt;<span style="color: black;">My First Headingspan </span>&lt;<span>/h1</span>&gt;</span>  <br>
+                <span>&lt;<span>p</span>&gt;<span style="color: black;">My first paragraph.</span>&lt;<span>/p</span>&gt;</span> <br>
+                    <br>
+                <span>&lt;<span>/body</span>&gt;</span> <br>
+                <span>&lt;<span>/html</span>&gt;</span> <br>  
+                    <hr> 
+                </code>
+        </div>
+    </div>
+            <div>
+                
+                 <p>   <h2>Explicación de etiquetas básicas </h2> </p>
+                <ol type="I">
+                     <li>La etiqueta <code>&lt;!DOCTYPEhtml&gt;</code> declaración define el tipo documento para ser HTML5</li>
+                     <li>La etiqueta <code>&lt;html&gt;</code> define el elemento raíz de una página HTML</li>
+                     <li>El atributo <code>lang="es-ES"</code> especifica el idioma del documento, va seguido de la etiqueta <code>&lt;html&gt;</code></li>
+                     <li>La etiqueta <code>&lt;head&gt;</code> define los metadatos que contiene información sobre el documento</li>
+                     <li>La etiqueta <code>&lt;meta charset="UTF-8"&gt;</code> define el estándar de codificación universal de caracteres, va dentro de head. </li>
+                     <li>La etiqueta <code>&lt;title&gt;</code> especifica un título para el documento</li>
+                     <li>La etiqueta <code>&lt;body&gt;</code> define el contenido visible de la página</li>
+                     <li>La etiqueta<code>&lt;h1&gt;</code> define un encabezado del texto</li>
+                     <li>La etiqueta <code>&lt;p&gt;</code> define un párrafo</li>
+                </ol>        
+        </div>
+                
+        </div>
+               
+        
+                <h2>Etiquetas HTML</h2>
+                <p>Las etiquetas HTML son los nombres de ekementos entre paréntesis angulares</p>
+        <!-- <div style="background-color:lightblue"> -->
+               <div class= etiquetashtml> 
+                    <br/>
+                  <p> <strong>&lt;Nombre de etiqueta&gt;</strong> contenido va aquí ... <strong>&lt;/etiqueta&gt;</strong></p>
+                <br/>
+        </div>
+        <div>   
+                <dl>
+                        <dt><b>Etiquetas HTML </b></dt> <dd>Normalmente vienen en pares como &lt;p&gt;y&lt;/p&gt;</dd>
+                        <dt><b>La primera etiqueta </b></dt> <dd>En un par es la etiqueta de inicio, la segunda etiqueta es la etiqueta de fin</dd>
+                        <dt><b>La etiqueta final </b></dt><dd>Se escribe igual que la etiqueta de inicio, pero con una barra inclinada insertada antes de que el nombre de la etiqueta</dd>
+                </dl>    
+        </div>    
+        <div class="nota">
+            <p> <b>Consejo</b>: La etiqueta de inicio también se llama la etiqueta de apertura y la etiqueta final de la <b>etiqueta de cierre.</b></p>
+
+        </div>
+            <br>
+            <br>
+        <div>
+            <h2>Navegadores web</h2>
+                <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br>
+                El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
+                
+                <img src="img/imgpractica.png" alt="imagen navegador Chrome" width="635" height="361">
+                <hr>
+        </div>    
+            
+     <div>           
+            <h2>Versiones de HTML </h2>
+        <p> Desde los primeros días de la web, ha habido muchas versiones de HTML:</p>
+            <table style="width:30%"
+                  
+                  >
+                    <tr align="left">
+                        <th>Versión</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td> 
+                        <td>1991</td> 
+                    </tr>  
+                    <tr>
+                        <td>HTML 2.0</td>
+                        <td>1995</td>
+                    </tr> 
+                    <tr>
+                        <td>HTML 3.2</td>
+                        <td>1997</td>
+                    </tr>
+                    <tr>
+                        <td>XHTML</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>2014</td>
+                    </tr>
+            </table>
+              
+     </div>
+     <br>
+     <br>
+     <br>
+<!--     <div id="marco" style="background-color:lightgreen">&lt;html&gt;
+        <div id="marco2" style="background-color:rgb(203, 255, 203)">head 
+                <div id="marco4"  style="background-color:rgb(232, 250, 227)">title</div>
+        </div>
+        <div id="marco3" style="background-color:rgb(203, 255, 203)">body
+            <div id="marco4"  style="background-color:rgb(232, 250, 227)">blanco
+                <div>h1</div>
+                <div>p</div>
+                <div>p</div>
+            </div>
+        </div>
+    </div> -->
+    <br>
+    <br>
+    <br>
+    <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
+            <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+            <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
+            </div>
+            &lt;/head&gt;
+            </div>
+            <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
+            <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+            <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+            <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+            <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
+            </div>
+            &lt;/body&gt;
+            </div>
+            &lt;/html&gt;
+            </div>
+            <br>
+            <br>    
+     <div class="nota">
+         <p>Nota: Solo el contenido dentro de la sección <code> &lt;code&gt;</code> (el área blanca arriba) se muestra en un navegador</p>
+     </div>
+    <hr>
+     
+    
+    <br>
+    <br>
+            <footer>Por Alba C.</footer>
+</body>
+</html>
