@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos Array (matíz)</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="../js/funcionesmatrices.js"></script>
+<link href="../css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+<h1>El concepto de matrizes</h1>
+<hr>
+<h2>El concepto de Fecha</h2>
+<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
+<p><strong>Mar Mar 19 de 2019 12:50:06 GMT + 0100 (Hora Estándar de Europa central)</strong></p>
+<p>Fecha objetos se crean con el new Date()constructor. new Date()crea un nuevo objeto Date con la <strong>fecha y hora actual</strong>:</p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+  <button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 id="fechalarga" class="border-bottom border-info text-center mb-3"></h3>
+				<p class="centrar" >
+					<a id="link1" class="enlace" href="#">Enlace1</a>
+					<a id="link2" class="enlace" href="#">Enlace2</a>
+					<a id="link3" class="enlace" href="#">Enlace3</a>
+					<a id="link4" class="enlace" href="#">Enlace4</a>
+					<a id="link5" class="enlace" href="#">Enlace5</a>
+					<a id="link6" class="enlace" href="#">Enlace6</a>
+				</p>
+			</div>
+		</div>
+		</div>
+</div>
+<script>
+	window.onload = reloj(); 
+	
+	
+	
+	
+		
+
+</script>
+<style>
+	.enlace {
+		background-color: green; 
+		color: white;
+		text-decoration: none;
+		padding: 10px 16px;
+	}
+		
+	.enlace:hover {
+		background-color: green; 
+		color: white;
+		text-decoration: none;
+		box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0  rgba(0,0,0,0.19);
+	}
+	.centrar {
+		text-align: center;
+	}
+		
+</style>
+<style>
+	#contenedor {display:block;}
+</style>
+<hr>
+<h2>Métodos de Array</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    
+    <tr>
+      <td><a href="#">new Array()</a></td>
+      <td>Crea un nuevo objeto o Array co los datos existentes en una variable</td>
+      <td><em>new Array()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="matriz()">Ejecutar</button></td>
+    </tr>
+     <tr>
+      <td><a href="#">split()</a></td>
+      <td>Convierte una cadena en una matriz de datos</td>
+      <td><em>string.split(separator, limit)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="nombrespersonas()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">concat()</a></td>
+      <td>Une dos o más matrices devuelve una copia de la matriz unida</td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="unionfrutas()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">copyWithin()</a></td>
+      <td>Copia los elementos de la Arrya y la Array en una posición contreta</td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="copyarray()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">entries()</a></td>
+      <td>Crear un iterador objeto Array, con pares clave / valor para cada elemento de la matriz de fruta:</td>
+      <td><em>entries()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="entries1()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">every()</a></td>
+      <td>Compruebe si todos los valores de la edad matriz son mayores de 18 años:</td>
+      <td><em>array.every(function(currentValue, index, arr), thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="edad()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">fill()</a></td>
+      <td>Cambia todos los elementos de una matriz con un valor estático.</td>
+      <td><em>array.fill(value, start, end)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cambiarelemento()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">filter()</a></td>
+      <td>Devolver una matriz de todos los valores de la edad de matriz que son mayores de 18 años:</td>
+      <td><em>array.filter(function(currentValue, index, arr), thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="filtro()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">find()</a></td>
+      <td>Obtener el valor del primer elemento de la matriz que tiene un valor de 18 o más:</td>
+      <td><em>array.find(function(currentValue, index, arr),thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="encontrarEdad()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">findindex()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+     <tr>
+      <td><a href="#">forEach()</a></td>
+      <td>Lista de cada elemento de la matriz</td>
+      <td><em>array.forEach(function(currentValue, index, arr), thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ListaMatriz()">Ejecutar</button></td>
+    </tr>
+     <tr>
+      <td><a href="#">from()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+     <tr>
+      <td><a href="#">includes()</a></td>
+      <td>Comprobar si una matriz incluye  una palabra, ej:"Mango":</td>
+      <td><em>array.includes(element, start)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="buscarelemento()">Ejecutar</button></td>
+    </tr> 
+      <tr>
+      <td><a href="#">indexOf()</a></td>
+      <td>Buscar una matriz  de un elemento especifico, y devuelve su posición</td>
+      <td><em>array.indexOf(item, start)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="buscaryposicionarElemento()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="#">isArray()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+    
+      <tr>
+      <td><a href="#">join()</a></td>
+      <td>se une a todos los elementos de la matriz en una cadena.</td>
+      <td><em>join()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="EjJoin()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="#">keys()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+      <tr>
+      <td><a href="#">lastIndexOf()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr><tr>
+      <td><a href="#">map()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+     <tr>
+      <td><a href="#">pop()</a></td>
+      <td>método elimina el último elemento de una matriz</td>
+      <td><em>pop()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cortarmatriz()">Ejecutar</button></td>
+    </tr>
+     <tr>
+      <td><a href="#">push()</a></td>
+      <td>método añade un nuevo elemento a una matriz (al final):</td>
+      <td><em>push()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevoelemento()">Ejecutar</button></td>
+    </tr>
+     <tr>
+      <td><a href="#">reduce()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+     <tr>
+      <td><a href="#">reduceRight()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+     <tr>
+      <td><a href="#">reverse()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="#">shift()</a></td>
+      <td>Método elimina el primer elemento de matriz y "desplaza" todos los otros elementos a un índice inferior.</td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="desplazaelemento()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="#">slice()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+        <tr>
+      <td><a href="#">some()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="#">sort()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="#">splice()</a></td>
+      <td>método se puede utilizar para añadir nuevos elementos a una matriz:</td>
+      <td><em>splice()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="añadirelemento()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="#">toString()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="#">unshift()</a></td>
+      <td>El unshift()método añade un nuevo elemento a una matriz (al principio), y "unshifts" elementos mayores:</td>
+      <td><em>unshift()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="anadeshift()">Ejecutar</button></td>
+    </tr>
+      <tr>
+      <td><a href="#">valueOf()</a></td>
+      <td></td>
+      <td><em></em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="()">Ejecutar</button></td>
+    </tr> 
+      
+    </tr>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
