@@ -1,0 +1,72 @@
+
+main {
+	width: 80%;
+	background-color: lightgray;
+	margin-left: 10%;
+	padding: 20px;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 1px 10px 50px 1px #888888;
+	overflow: hidden;
+}
+
+h2 {
+	text-align: center;
+	
+}
+
+.divizq {
+	width: 80%;
+	background-color: khaki;
+	margin: 5px;
+	padding: 5px;
+	padding-left: 20px; 
+	border-radius: 5px 5px 5px 5px;
+	float: left;
+	
+	
+}
+
+.divder {
+	width: 80%;
+	background-color: lightblue;
+	margin: 5px;
+	padding: 5px;
+	padding-left: 20px;
+	border-radius: 5px 5px 5px 5px;
+	float: right;
+}
+
+
+span {
+	color: darkred;
+}
+
+span span {
+	color: royalblue;
+	text-transform: capitalize;
+	
+}
+
+ .button {
+	padding: 10px;
+	background-color: royalblue;
+	color: aliceblue;
+	border-radius: 5px 5px 5px 5px; 
+	margin-top: 10px;
+	 
+}
+
+.button:hover {
+	background-color: lightblue;
+}
+
+.barra {
+	border-radius: 5px 5px 5px 5px;
+	height: 30px;
+	
+}
+
+.etiqueta {
+	line-height: 15px;
+	color: royalblue;
+}
