@@ -1,13 +1,20 @@
 //CÁLCULO 
 
 function calculoNeto() {
-	var neto = Number(document.getElementById("number1").value);
+	var bruto = Number(document.getElementById("number1").value);
 	
-	var SegS = 6.4;
-	var IRPF = 15;
-	var paga = 14;
 	
+	var SegS = ((bruto * 6.4)/100);
+	var IRPF = ((bruto * 15)/100);
+	
+	var neto = bruto - IRPF - SegS;
+	var pagas = neto/14;
 	
 	document.getElementById('etiqueta1').innerHTML =
-		"Sueldo neto " neto + (IRPF + SegS);
+		"Sueldo neto es: " + pagas.toPrecision(4) + " € "; 
+}
+
+function calculoProducto() {
+	var precioFinal = Number(document.getElementById("number2").value);
+	
 }
