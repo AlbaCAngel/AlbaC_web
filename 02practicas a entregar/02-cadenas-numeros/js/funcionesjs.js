@@ -1,5 +1,3 @@
-//CÁLCULO 
-
 function calculoNeto() {
 	var bruto = Number(document.getElementById("number1").value);
 	
@@ -15,6 +13,22 @@ function calculoNeto() {
 }
 
 function calculoProducto() {
-	var precioFinal = Number(document.getElementById("number2").value);
+	var precio= Number(document.getElementById("number2").value);
+	
+	var desc = (50 / 20)/100;
+	var imp = (50 * 21)/100;
+	var total = 50 - desc + imp;
+	
+
+	
+document.getElementById('etiqueta2').innerHTML =
+		"Descuento del -20%" + "<br>" + 
+		"Impuesto +21%" + "<br>" +
+		"Precio total: " + total.toPrecision(4) + " € "; 
+	
+}
+
+function tiempoDescarga() {
+	var precio = Number(document.getElementById("number2").value);
 	
 }
