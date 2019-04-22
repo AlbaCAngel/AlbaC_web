@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilologin.css">
+<script src="js/login.js"></script>
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
@@ -39,7 +42,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <a href="#" class="w3-bar-item w3-button">Shoes</a>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="" class="w3-bar-item w3-button w3-padding" onclick="">Login</a> 
+  <a href="#" class="w3-bar-item w3-button w3-padding" onclick="login()">Login</a> 
   <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
 </nav>
 
@@ -214,6 +217,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 </div>
 
+
+
 <script>
 // Accordion 
 function myAccFunc() {
@@ -240,6 +245,36 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 </script>
+
+<!-- Formulario de login -->
+<div id="divgrande">
+<div id="divpeq">
+	<form method="post" id="formlogin">
+		<fieldset>
+			<div class="datosusuario">
+				<img src="img/cancel.png" alt="cerrar" class="cerrar" onClick="cerrar()">
+				<div class="usuario">
+					<img src="img/img_avatar.png" alt="avatar" class="avatar">
+				</div>
+				<br>
+				<label for="usuario"><b>Usuario</b></label><br>
+				<input name="usuario" type="text" autofocus required id="usuario" placeholder="  Usuario" pattern="[A-Za-z0-9]+" onBlur="comprobarusuario()">
+				<label for="passw"><b>Contraseña </b></label><i class="far fa-eye" id="iojo" onClick="activarpw()" onMouseOver="document.getElementById('iojo').style.cursor='pointer'"></i><br>
+				<input type="password" name="passw" id="passw" maxlength="4" placeholder="  Contraseña" required pattern="[0-9]{4}*">
+				<br><br>
+				<input type="text" name="pin" id="pin" placeholder="  Indique aquí el Pin" class="coculto cpin">
+				<p class="coculto txtrojo" id="errorlogin"></p>
+				<input type="submit" value="Iniciar sesión" class="width100 colorverde" id="benviar" onClick="iniciarsesion()"><br>
+				<input type="checkbox" name="recordar" value="recordar" id="recordar"> Recordarme<br>
+			</div>
+			<div class="pieregistro">
+					<input type="submit" value="Cancelar" class="colornaranja fleft" onClick="cerrar()">	
+					<p class="fright centrado" style="vertical-align:1.2em;">¿Has olvidado la <a href="#" onClick="recordarpsw()">contraseña</a>?</p>	
+			</div>	
+		</fieldset>
+	</form>
+</div>
+</div>
 
 </body>
 </html>
