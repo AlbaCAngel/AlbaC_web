@@ -1,0 +1,90 @@
+#formulariouser2 {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.75);
+			z-index: 99999;
+			display: block;
+			padding-top: 100px;
+}
+
+#contenido1 {
+		background-color: aliceblue; 
+		margin-left: 25%;
+		width: 40%;
+		height: 90%;
+		padding: 50px;
+		display: block;
+		position: relative;
+		
+		
+	}
+#contenido2 {
+		background-color: aliceblue; 
+		margin-left: 35%;
+		width: 30%;
+		height: 93%;
+		padding: 50px;
+		display: block;
+		position: relative;
+		
+		
+		
+	}
+	
+#demo1  {
+		
+		width: 100%;
+		display: block;
+		position: relative;
+		
+	}
+
+.formulario {
+	        margin-top: 10%;
+			margin-bottom: 30px;
+			margin-left: 25%;
+			width: 150px;
+            background-position: 50%;
+            border-radius: 50%;
+}
+
+.cancel {
+	padding: 5px;
+	color: aliceblue;
+	background-color: #E73110;
+	border-radius: 5px 5px 5px 5px;
+	margin-left: 50px;
+}
+
+.accept {
+	padding: 5px;
+	color: aliceblue;
+	background-color: #17781F;
+	border-radius: 5px 5px 5px 5px;
+	margin-left: 20%;
+}
+	
+/*------------CARTEL BIENVENIDA-------------------*/
+#formulariouser3 {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.75);
+			z-index: 99999;
+			display: none;
+			padding-top: 100px;
+}
+#divBienvenida {
+		background-color: aliceblue; 
+		margin-left: 35%;
+		width: 30%;
+		height: 90%;
+		padding: 50px;
+		display: none;
+		position: relative;
+}

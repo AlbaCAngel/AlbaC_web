@@ -1,0 +1,434 @@
+  <!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Variables JavaScript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link href="../css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container mt-3">
+	<h1>Variables de Javascript</h1>
+    <hr>
+<h2>Expresión de las variables</h2>
+    
+
+<h2>Las posibilidades de visualización de JavaScript</h2>
+    <p>JavaScript puede alterar los datos "Display" de diferentes maneras:</p>
+<ul>
+      <li>La escritura en un elemento HTML, usando <code>innerHTML.</code></li>
+      <li>La escritura en la salida HTML utilizando <code>document.write().</code></li>
+      <li>Escribir en un cuadro de alerta, utilizando <code>window.alert().</code></li>
+      <li>Escribir en la consola del navegador, usando <code>console.log().</code></li>
+    </ul>
+ 
+  <p>&nbsp;</p>
+  <div class="container">
+  <div class="row">
+  
+  <div class="col-md-3">
+  <div class="bg-light shadow rounded p-2">
+  	<p><strong>Usando innerHTML</strong></p>   
+  	<p>InnerHtml define el contenido HTML</p>
+  	<button class="btn btn-primary"  onClick="demo1()">Click on!</button>
+  	<p id="demo1"></p>
+  	<script>
+		 function demo1 () {
+		 document.getElementById("demo1").innerHTML = 5 + 6;
+		 }
+	</script>
+  </div>
+  </div> 
+ 
+ <div class="col-md-3">
+ <div class="bg-light shadow rounded p-2">
+ 	<p><strong>Usando document.write</strong></p>
+ 	<p>Para pruebas conviene utilizar el document.write</p>
+ 	
+ 	<button class="btn btn-primary" onClick="demo2()">Click on!</button>
+ <p>
+ 	<script> 
+
+	 function demo2 () {
+	 document.write (5 + 6);}
+	
+	 </script>
+</p>
+ </div>
+ </div> 
+ 
+ <div class="col-md-3">
+ <div class="bg-light shadow rounded p-2">
+ 	<p><strong>Usando document.alert</strong></p>
+ 	<p>Se puede utilizar un cuadro de alerta para mostrar los datos</p>
+ 	<button class="btn btn-primary" onClick="demo3()">Click on!</button>
+ <p>
+ 	<script>
+	function demo3 () {
+	window.alert (5 + 6); }
+	</script>
+</p>
+ </div>
+ </div> 
+ 
+ <div class="col-md-3">
+ <div class="bg-light shadow rounded p-2">
+ 	<p><strong>Usando console.log</strong></p>
+ 	<p>Para propósitos de depuración, se puede utilizar el console.log()método para mostrar los datos.</p>
+ 	<button class="btn btn-primary" onClick="demo4()">Click on!</button>
+ <p>
+ 	<script>
+	function demo4 () {
+	console.log (5 + 6); }
+	</script>
+</p>
+ </div>
+ </div> 
+ 
+  </div>
+  </div> 
+<div>
+  <button class="btn btn-primary" onClick="simbolo()">Click on!</button>
+  <script>
+	function simbolo ()  {
+	var nombre = promt ('Introduce tu nombre');
+	var apellido = promt ('Introduce tu apellido');
+	  window.alert('Tu nombre es: '+ nombre +'\n y tu apellido es:' + apellido);
+	}
+	</script> 
+	
+</div>
+<br>
+<div>
+<p>Variable aceptar o Cancelar</p>
+	<button class="btn btn-primary" onClick="confirmar()">Click on!</button>
+	<script>
+	function confirmar () {
+	var inicial;
+	/*confirm('¿Aceptar o cancelar?');*/
+	var pulsarboton = confirm ('Aceptar o Cancelar?');
+		if (pulsarboton == "true") {
+			inicial = "Has pulsado Aceptar";
+		}	else { 
+			inicial = "Has pulsado Cancelar";
+		}
+
+	alert(inicial);
+		}
+	</script>
+	
+	</div>
+	<br>
+	<br>
+</div>
+<div class="container">
+<p>Variable Fecha-año</p>
+<button class="btn btn-primary" onClick="fechaHora()">Click on!</button>
+	<script>
+	   function fechaHora () {
+		   var fecha = new Date();
+		   var extraerDia = fecha.getDay(); //2
+		   var diaSemana = ["Domingo","Lunes","Martes","Miercoles","jueves","viernes","Sábado"];
+		   var extraerDiaMes = fecha.getDate(); //12
+		   var extraerMes = fecha.getMonth(); //3
+		   var nombreMes = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+		   
+		   alert("Hoy es: " + diaSemana[extraerDia] +
+		   " dia " + extraerDiaMes + " del mes " + nombreMes[extraerMes]
+	   );
+	   }
+		
+	</script>
+</div>
+
+<div class="container">
+<p>Variable Open</p>
+	<button class="btn btn-primary" onClick="fechaHora()">Click on!</button>
+	<script>
+//definimos la anchura y altura de la ventana
+
+var altura=380;
+var anchura=630;
+		
+//calculamos la posicion x e y  para centrar la ventana.
+	/*var myWindow = window.open("", "MsgWindows", "width=200,height=100");
+		myWindow.document.write("<p>This is 'MsgWindow'.I am 200px wide and 100px tall!</p>");*/
+
+	</script>
+<div>
+	<h2>Cuadros de diálogos del navegador</h2>
+	<p>JavaScript puede mostrar cuadros de diálogos a traves de elemento del DOM "Windows" de diferentes maneras:</p>
+	 <ul>
+	 	<li>El metodo <code>alert()</code> muestra un dialogo con un mensah de alerta</li>
+	 	<li>El método <code>confirm()</code> muestra un cuadeo de dialogo de confirmación</li>
+	 	<li>El metodo <code>prompt</code> muestra un cuadro de diálogo de entrada de datos</li>
+	 	
+	 </ul>
+	 <div class="container" style="background-color: grey;">
+	 <h2>Ejemplo de cuadros de diálogo de JavaScript</h2>
+	 <div class="row p-3">
+	 	<div class="col-4" >
+	 	<div class="bg-light rounded p-2">
+			<p><strong>Open()</strong></p>
+			<p>El metodo <code>open()</code> muestra un cuadro de dialogo con un mensaje de confirmación junto al botón <b>Aceptar</b> y <b>Cancelar</b>
+	 	<br>
+	 	<i>confirm(message);</i>
+	 	</p>
+	 	<botton class="btn btn-primary" onClick="confirm1()">Pulsar</botton>
+	 	<script>
+		  var MyWindows
+		  function confirm1() {
+          MyWindows = window.open("", "myWindow", "width=500, height=300");  
+           }
+		</script>
+	 	</div></div>
+	 	<div class="col-4">
+	 	<div class="bg-light rounded p-2">
+			<p><strong>Close()</strong></p>
+			<p>El metodo <code>Close()</code> muestra un cuadro de dialogo de aleta con contenido opcional especificado y un boton de <b>Aceptar</b>.
+	 	<br>
+		<i>alert(message)</i></p> 
+		<botton class="btn btn-primary" onClick="confirm2()">Pulsar</botton>
+		<script>
+			var MyWindows
+			function confirm2() {
+             MyWindows.close(); 
+			}
+		</script>
+	 	</div>
+	 	</div>
+	 	<div class="col-4">
+	 	<div class="bg-light rounded p-2">
+			<p><strong>Print()</strong></p>
+			<p>El metodo <code>Print()</code> muestra un cuadro de dialogo que solicita una entrada de datos, junto a un botón<b>Aceptar</b> y <b>Cancelar</b>.
+	 	<br>
+		<i>prompt(text,defualtText)</i></p> 
+		<botton class="btn btn-primary" onClick="confirm3()">Pulsar</botton>
+		<script>
+			function confirm3 () { 
+		    window.print();
+			}
+			</script>
+	 	</div>
+	 	</div>
+	 
+	 </div>
+	 </div>
+	
+</div>
+</div>
+
+<br>
+<br>
+<div class="container" style="background-color: grey; text-align: center;">
+<h2>Intervalo de tiempo</h2>
+<div class="row p-3">
+		<div class="col-12">
+			<div class="bg-light p-3 rounded"> 
+			 
+			 <p id="Tiempo"></p>
+			 <botton class="btn btn-primary" onClick="time1()">Parar el tiempo</botton>
+			 <script>
+			  var variabletiempo = setInterval(myTimer, 1000);
+
+				function myTimer() {
+				  var d = new Date();
+				  var t = d.toLocaleTimeString();
+				  document.getElementById("Tiempo").innerHTML = t;
+			     }
+
+				function time1() {
+				  clearInterval(variabletiempo);
+				}	
+			</script>
+			</div>
+		</div>
+	
+
+</div>		
+</div>
+<br>
+<br>
+<div class="container" style="background-color: grey; text-align: center;">
+<div class="row p-3">
+	<div class="col-6">
+		<div class="bg-light p-3 rounded"> 
+			<p><strong>Decodificación de texto en base-64</strong></p>
+			<button class="btn btn-primary" onClick="decode()">Prueba tu mismo</button>
+			
+			<p id="prueba"></p>
+			<script>
+			function decode (){
+				 var str = "Texto codificado";
+  				 var enc = window.btoa(str);
+  				 var dec = window.atob(enc);
+			     var res = "Encoded String: " + enc + "<br>" + "Texto original: " + dec;
+  							document.getElementById("prueba").innerHTML = res;
+			}
+			</script>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="bg-light p-3 rounded"> 
+			<p><strong>Codificación de texto en base-64</strong></p>
+			<button class="btn btn-primary" onClick="decode2()">Prueba tu mismo</button><br>
+			<p id="prueba2"></p>
+			<script>
+			function decode2 (){
+				 var str = "Texto codificado";
+  				 var enc = window.btoa(str);
+			     var res = "Encoded String: " + enc;
+  			
+				document.getElementById("prueba2").innerHTML = "Texto original: " + str + "<br>" + res;
+			}
+			</script>
+		</div>
+	</div>
+</div>
+	
+</div>
+<br>
+<br>
+<div class="container" style="background-color: grey; text-align: center;">
+<div class="row p-3">
+	<div class="col-6">
+		<div class="bg-light p-3 rounded"> 
+			<p><strong>Mover ventana a (move to)</strong></p>
+			<button class="btn btn-primary" onClick="abrir1()">Prueba tu mismo</button>
+			<button class="btn btn-primary" onClick="mover1()">Prueba tu mismo</button>
+			
+				<script>
+				function abrir1() {
+				myWindow = window.open('', '', 'width=400, height=300');   
+				myWindow.document.write("<p>Esto es una ventana emergente 'myWindow'</p>");       
+				}
+
+				function mover1() {
+				myWindow.moveTo(700, 400);                                    
+				myWindow.focus();                                           
+				}
+
+				</script>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="bg-light p-3 rounded"> 
+			<p><strong>Mover ventana hacia (move By)</strong></p>
+			<button class="btn btn-primary" onClick="abrir1()">Prueba tu mismo</button>
+			<button class="btn btn-primary" onClick="mover2()">Prueba tu mismo</button>
+			
+				<script>
+				function abrir1() {
+				myWindow = window.open('', '', 'width=400, height=300');   
+				myWindow.document.write("<p>Esto es una ventana emergente 'myWindow'</p>");       
+				}
+
+				function mover2() {
+				myWindow.moveBy(400, 400);                                    
+				myWindow.focus();                                           
+				}
+
+				</script>
+		</div>
+	</div>
+	
+	<div class="col-12 m-3">
+		<div class="bg-light p-3 rounded">
+			<p><strong>Comparación</strong></p>
+			<button class="btn btn-primary" onClick="abrir2()">Prueba tu mismo</button>
+			<button class="btn btn-primary" onClick="mover3()">Move To</button>
+			<button class="btn btn-primary" onClick="mover4()">Move By</button>
+			
+				<script>
+				function abrir2() {
+				myWindow = window.open('', '', 'width=400, height=300');   
+				myWindow.document.write("<p>Esto es una ventana emergente 'myWindow'</p>");       
+				}
+
+				function mover3() {
+				myWindow.moveTo(200, 400);                                    
+				myWindow.focus();                                           
+				}
+
+				function mover4() {
+				myWindow.moveTo(700, 400);                                    
+				myWindow.focus();                                           
+				}
+
+				</script>
+		</div>
+	</div>
+</div>
+</div>
+<br>
+<br>
+
+<div class="container" style="background-color: grey; text-align: center;">
+<div class="row p-3">
+	<div class="col-6">
+		<div class="bg-light p-3 rounded"> 
+			<p><strong>Cambiar tamaño de la ventana emergente (resize To)</strong></p>
+			<button class="btn btn-primary" onClick="abrir3()">Prueba tu mismo</button>
+			 <button class="btn btn-primary" onClick="tamaño1()">Prueba tu mismo</button>
+				 <script>
+					 function abrir3() {
+				myWindow = window.open('', '', 'width=400, height=300');   
+				myWindow.document.write("<p>Esto es una ventana emergente 'myWindow'</p>");       
+				}
+					 
+					 function tamaño1() {
+					 myWindow.resizeBy(250, 250);              
+					 myWindow.focus();                                       
+					 }
+				 </script>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="bg-light p-3 rounded"> 
+			<p><strong>Cambiar tamaño de la ventana emergente (resize By)</strong></p>
+			<button class="btn btn-primary" onClick="abrir4()">Prueba tu mismo</button>
+			 <button class="btn btn-primary" onClick="tamaño2()">Prueba tu mismo</button>
+				 <script>
+					function abrir4() {
+					  myWindow = window.open('', '', 'width=400, height=300');   
+					  myWindow.document.write("<p>Esto es una ventana emergente 'myWindow'</p>");       
+					  }
+					function tamaño2() {
+					  myWindow.resizeTo(250, 250);                            
+					  myWindow.focus();                                       
+                      }
+				 </script>
+		</div>
+	</div>
+</div>
+</div>
+<br>
+<br>
+<div class="container" style="background-color: grey; text-align: center;">
+<div class="row p-3">
+	<div class="col-6">
+		<div class="bg-light p-3 rounded"> 
+			
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="bg-light p-3 rounded"> 
+			
+		</div>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

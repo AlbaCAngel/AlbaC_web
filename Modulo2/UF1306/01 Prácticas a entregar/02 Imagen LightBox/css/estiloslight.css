@@ -1,0 +1,97 @@
+#modal2 {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.75);
+			z-index: 99999;
+			display: none;
+			padding-top: 100px;
+		   
+		}
+	
+#contenido2 {
+		background-color: aliceblue; 
+		margin-left: 25%;
+		width: 50%;
+		height: 90%;
+		padding: 50px;
+		display: block;
+		position: relative;
+		
+		
+	}
+	
+	#demo2  {
+		
+		width: 100%;
+		display: block;
+		position: relative;
+		
+	}
+/*--------IMAGEN3--------*/
+#modal3 {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.75);
+			z-index: 99999;
+			display: none;
+			padding-top: 100px;
+		   
+		}
+	
+#contenido3 {
+		background-color: aliceblue; 
+		margin-left: 25%;
+		width: 50%;
+		height: 90%;
+		padding: 50px;
+		display: block;
+		position: relative;
+		
+		
+	}
+
+#demo3  {
+		
+		width: 100%;
+		display: block;
+		position: relative;
+}
+
+/*--------IMAGEN3--------*/
+#modal4 {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.75);
+			z-index: 99999;
+			display: none;
+			padding-top: 100px;
+		   
+		}
+	
+#contenido4 {
+		background-color: aliceblue; 
+		margin-left: 25%;
+		width: 50%;
+		height: 90%;
+		padding: 50px;
+		display: block;
+		position: relative;
+		
+		
+	}
+
+#demo4  {
+		
+		width: 100%;
+		display: block;
+		position: relative;
+}
