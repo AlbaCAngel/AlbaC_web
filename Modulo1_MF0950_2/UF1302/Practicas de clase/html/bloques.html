@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+        <title>Etiquetas que dan formato al texto</title>
+            <meta charset="UTF-8">
+            <meta name="description" content="Diseño de páginas web con HTML,CSS"> <!-- Descripción pag web, para las busquedas de google -->
+            <meta name="keywords" content="HTML, CSS, XML, JavaScript"><!-- Palabras clave -->
+            <meta name="title" content="HTML, CSS, JavaScript"><!-- titulo que aparecerá en la busqueda -->
+
+            <meta name="name" content="Alba C.Angel"><!-- Definir al autor, sobretodo para blogs -->
+           
+            <meta http-equiv="refresh" content="30"><!-- actualizar pag cada30 seg -->
+         
+            <style> </style>
+            <!-- EJEMPLO: <style>
+                    body {background-color: powderblue;}
+                    h1 {color: red;}
+                    p {color: blue;}
+                  </style> -->
+            <script></script> <!-- para lso css y js dentro de la hoja de html no en carpetas externas al doc html-->
+            
+            <link href="css/style.css" rel="stylesheet"> <!-- cuando incorporamos los estilos a una carpeta diferente. Enlaza los doc.  Es una hoja de estilo (stylelesheet) que está ubicada dentro del doc style.css, dentro de la carpeta css-->
+             <!--<link rel="shortcut icon" href="batman.ico" type="image/x-icon">-->
+            <link rel="shortcut icon" href="img/favicon.ico" type="image/icon">
+           
+            <script src="js/funciones.js"></script> <!-- Carga dento de la carpeta js el archivo .js -->
+            
+            
+        <!-- <base href="http://www.Alba.com/Modulo1_MF0950_2/UF1302/practicas/img/" target="_blank"> -->
+        
+        <!--<link rel="icon" href="imagen.png" type="imagen/png">
+        <link rel="icon" href="imagen.gif" type="imagen/gif">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">-->
+         
+        
+        <style>  /*table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse; 
+                }*/
+               
+                /* td { 
+                    background-color: lightblue;
+                }
+                th{ 
+                    background-color: none;
+                } */
+                body {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    width: 90%;
+                    margin: 0 auto;
+                 }
+                 h1, h2, h3, h4, h6 {
+                     font-family: Arial, Helvetica, sans-serif
+                 }
+               
+                /* div {  
+                background-color: #f1f1f1;  
+                margin: 20px; 
+                padding: 20px
+                }*/ 
+                
+                .nota {
+                background-color: #ffffcc; 
+                border-left: 6px solid #ffeb3b;
+                padding: 10px;
+                padding-bottom: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                
+                } 
+                hr {
+                    border:1px solid #cccccc;
+                             } 
+                .hrejem {
+                    border:1px solid #cccccc;
+                    width: 40%;
+                    margin: 0;
+
+                }
+                code {
+                   color: crimson;
+                   background-color: #f1f1f1f1;
+                   padding-left: 4px;
+                   padding-right: 4px;
+                   font-size: 110%
+                }
+                .etiquetashtml{
+                   border: 1px solid #cccccc;
+                   background-color: #f1f1f1;
+                   font-size: 24px;
+                   padding: 16px;
+                }
+                code span {
+                    color: mediumblue;
+                }
+                code span span {
+                    color: brown;
+                }
+                code span span span{
+                    color: crimson;
+                }
+
+                .code {
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color:#ffffff;
+                padding: 8px 12px;
+                border-left: 4px solid #4caf50;
+                color: black;
+                }
+                .ejemplo {
+                   background-color: grey;
+                   padding: 8px 16px;
+                   margin: 20px 0px;
+                   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16),0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                }
+                table h1,h2, h3, h4, h5, h6 {
+                    margin: 0;
+                    }
+
+                table {    
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%
+                    }
+                    td, th {
+                    border:1px solid grey;
+                    text-align: left;
+                    padding: 8px;  
+                        
+                    }
+                    .tr1:nth-child(even) /* Los hijos de tr (nth-child) vallan de gris, uno si y uno no */ {
+                        background-color: #cccccc;
+                    }
+                    mark {
+                        background-color: lightblue;
+                    }
+					
+			.blockquote { 
+			margin-top: 0;
+			margin-bottom: 0;
+			} 
+			
+			/*.div1 {
+				background-color: #DBD8D8;
+				
+			}  Diseño ejecutado en etiqueta*/
+			.cite {
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color:#ffffff;
+                padding: 8px 12px;
+                border-left: 4px solid #2196f3;
+                color: black;
+                }
+			
+			span{
+				padding: 2px 5px 2px 5px;
+				margin: 2px;
+				front-size: 87,5%;
+				color: #212529;
+				background-color: #FFFFFF;
+				border-radius: 3px;
+			}
+					
+			        /*img{
+					width: 400px; 
+					height: 300px;
+					float: right;
+						
+					} */
+			
+        </style>
+        
+       <style>  /* .marco{
+                 border: 1px solid black;
+                 border-collapse: collapse;
+                                 
+              } */
+                 
+		   #divpadre{ 
+			   overflow:hidden;
+			  padding: 15px;
+			   /*border: 1px solid red;*/
+			   margin: 0 auto;
+			   width: 70%;
+		   }
+		   #divhijo1{
+			   float: left; 
+			   width: 33.33%; 
+			   /*background-color: lightblue;*/
+		   }
+		   
+		   #divhijo2{
+			   float: left;
+			   width: 33.33%;
+			   /*background-color: lightblue;*/
+		   }
+		   #divhijo3{ 
+			   float: left; 
+			   width: 33.33%; 
+			   /*background-color: lightblue;*/		
+		   }
+		   kbd{
+			   padding: 0.2rem 0.4rem;
+			   font-size: 87.5;
+			   color: #ffffff;
+			   background-color: #212529;
+			   border-radius: 0,2rem;
+		   }      
+	
+	</style>
+        <style>
+a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+         <script> </script>
+         
+       
+</head>
+
+<body>
+    <center><h1>HTML Bloques </h1></center>
+	
+	
+	<hr>
+     <br>
+                      
+    <center><a href="index.html" >Indice</a> |  <a href="introduccion.html" >Introducción</a> | <a href="formato.html" >Formato</a> | <a href="listas.html" >Listas</a> | <a href="tablas.html" >Tablas</a> | <a href="bloques.html" >Bloques </a>| <a href="tablas.html">Multimedia</a> |</center>
+    <hr> 
+       <ul>
+               	<li><a href="#Etiquetas que citan el texto">Etiquetas que citan el texto</a></li>
+               	<li><a href="#Etiquetas">Etiquetas</a></li>
+               	<li><a href="#Ejemplo de uso">Ejemplo de uso</a></li>
+               	<ul><li><a href="#Ejemplos de uso2">4.1Ejemplos de uso</a></li></ul>
+               	<li><a href="#Elementos que agrupan el texto">Elementos que agrupan el texto</a></li>
+               	<li><a href="#Etiquetas">Etiquetas</a></li>
+               	<li><a href="#Etiquetas de codigo de computadora">Etiquetas de codigo de computadora</a></li>
+               </ul>         
+	<br>
+   <a name="arriba"></a>
+    <h2 id="Etiquetas que citan el texto">Etiquetas que citan el texto</h2>
+    
+    
+   
+<p>las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden prooporcionar informaciín útil a la los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atributo <code>&lt;title&gt;</code> para definir el significado de la abreviación.</p>
+<p>La etiqueta de marcado <code>&lt;cita&gt;</code> hace referencia a un trabajo creativo como un libro, una película, un programa de televisión o una canción, no el nombre de una persona.</p>
+<p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que se representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
+<p>La etiqueta de marcado <code>&lt;q&gt;</code> define una cita corta en la línea. Mrca las citas a otros autores o documentos. Genera automáticamente comillas alrededor del contenido.</p>
+<p>La etiqueta de marcado <code>&lt;dfn&gt;</code> define un término y debe contener el atributo <code>&lt;title&gt;</code> para la definición/explicación del término de dentro.</p>
+
+<hr>   
+<h2 id="Etiquetas">Etiquetas</h2> 
+    <table>
+
+        <tr> 
+           <th>Etiqueta</th>
+           <th>Definición</th>
+           <th>Ejemplo</th>
+           <th>Utilización</th>
+        </tr> 
+        <tr>
+            <td> <b> &lt;abbr&gt;</b> </td>
+            <td> Define una abreviación </td>
+            <td> Esto es un texto abreviado:<abbr title="HyperText Markup Language"> HTML</abbr></td>
+            <td> <b> &lt;abbr title="HyperText Markup Language"&gt;</b> HTML <b>&lt;/abbr&gt; </b> </td>
+        </tr>
+        <tr>
+                <td> <b> &lt;q&gt;</b> </td>
+                <td> Define una breve cita </td>
+                <td> <q>Esto es una breve cita</q></td>
+                <td> <b> &lt;q&gt; </b>Esto es una breve cita  <b>&lt;/q&gt;</b> </td>
+        </tr>
+        
+        <tr>
+                <td> <b> &lt;blockquote&gt;</b></td>
+                <td> Define una cita de otra fuente</td>
+                <td> <blockquote class="blockquote">Este texto es de otra fuente</blockquote></td>
+                <td> <b> &lt;blockquote&gt;</b>Este texto es de otra fuente<b>&lt;/blockquote&gt; </b> </td>
+        </tr>
+        <tr>
+            <td> <b> &lt;cite&gt;</b> </td>
+            <td> Define el título de una obra </td>
+            <td> <cite>Este texto es un citado  </cite></td>
+            <td> <b> &lt;cite&gt;</b>Este texto es un citado<b>&lt;/cite&gt;</b> </td>
+        </tr>
+        <tr>
+                <td> <b> &lt;dfn&gt;</b> </td>
+                <td> Define un termino</td>
+                <td> <dfn title="Hyper Text Markup Languaje">Esto es un término HTML</dfn></td>
+                <td> <b> &lt;dfn title="Hyper Text Markup Languaje"&gt;</b>Esto es un término HTML<b>&lt;/dfn&gt;</b></td>
+        </tr>
+      </table>
+<br>
+<br>
+<hr>
+<div style="background-color:#DBD8D8; padding:25px;"><!--class="div1"--> 
+ <h3 id="Ejemplo de uso"> Ejemplo de uso </h3>
+ 	 <div class="cite">
+ 	
+ 	 <p><strong>EL LENGUAJE <dfn> <abbr title="HyperText Markup Language">HTML </abbr></dfn></strong></p>
+ 	 <blockquote>
+ 	 <p> Como <strong>Tim Berner-Lee</strong>, el padre de la Web, escribió en <cite>Tejiendo la web</cite>: <q>Yo llegué en el momento justo, interesado, cuando el Hipertexto e Internet habían visto ya la luz, la tarea que me correspondía era hacer que casaran.</q> </p>
+	 </blockquote>
+ 	 </div>
+ 	
+	 <div class="code">
+	 <p><strong>CÓDIGO<dfn> <abbr title="HyperText Markup Language">HTML </abbr></dfn></strong></p>
+	 <blockquote><small><p style="line-height: 20px;">&lt;p&gt;&lt;strong&gt;EL LENGUAJE &lt;dfn&gt; &lt;abbr title=&quot;HyperText   Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;&lt;/p&gt;
+	  &lt;bloquequote&gt;
+	  &lt;p&gt; Como &lt;strong&gt;Tim Berner-Lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la web&lt;/cite&gt;: &lt;q&gt;Yo llegué en el momento justo, interesado, cuando el Hipertexto e Internet habían visto ya la luz, la tarea que me correspondía era hacer que casaran.&lt;/q&gt;&lt;/p&gt;
+      &lt;/bloquequote&gt;</p></small></blockquote>
+     </div>
+ </div>
+ <br>
+ <br>
+ <div class="nota">
+ <p><b>Nota:</b>Por defecto: <code>&lt;Blockquote&gt;</code> incluye un margen izquierdo cuando se visualiza. Esta caracteristica se usó de forma incorrecta en el pasado para lograr una sangría en el texto: Sin embargo, para ello se debe emplear la propiedad margin-left de CSS.</p>
+ </div>
+ <br>
+ <br>
+<div style="background-color: #EDEDED;padding: 25px;"> 
+ 	<h3 id="Ejemplos de uso2"> Ejemplos de uso</h3>
+ 	<div class="cite"> 
+ 			<p><strong>Elementos DIV - SPAN</strong></p> 
+ 			<div style="border: 1px solid black;margin: 10px 15px 10px 15px;">
+ 				<div style="background-color: orange;padding: 5px"><span>HTML</span> <span>lenguaje de marcas de texto </span><span>se utiliza para el desarrollo de paginas.</span>
+ 				</div>
+ 				<div style="background-color: mediumseagreen;padding: 5px"><span>CSS</span><span>hojas de estilo en cascada</span><span>se utiliza para definir y crear presentación HTML.</span>
+ 				</div>
+ 				<div style="background-color: yellow ;padding: 5px"><span>JavaScript</span><span>lenguaje de programación <span>se utiliza para dar dinamismo a las páginas web.</span></span></div>
+ 			</div> 
+ 	</div>
+ 	<div class="code">
+	<p><strong>CÓDIGO</strong></p>
+ 		  <blockquote><p style="line-height: 20px;"><small>&lt;div&gt;&lt;span&gt;HTML&lt;/span&gt; &lt;span&gt;lenguaje de marcas de texto &lt;/span&gt;&lt;span&gt;se utiliza para el desarrollo de paginas.&lt;/span&gt;&lt;/div&gt;<br>
+ 		  &lt;div&gt;&lt;span&gt;CSS&lt;/span&gt;&lt;span&gt;hojas de estilo en cascada&lt;/span&gt;&lt;span&gt;se utiliza para definir y crear presentación HTML.&lt;/span&gt;&lt;/div&gt;<br>
+	      &lt;div&gt;&lt;span&gt;JavaScript&lt;/span&gt;&lt;span&gt;lenguaje de programación &lt;span&gt;se utiliza para dar dinamismo a las páginas web.&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</small></p></blockquote>
+    </div>
+</div>
+ 
+
+  <div class="nota">
+ <p><b>Nota</b>:Un elemento en bloque siempre empieza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha</p>
+ </div>
+ <hr>
+ <br>
+ <br>
+ <h2 id="Elementos que agrupan el texto">Elementos que agrupan el texto</h2>
+ <p>El elemento<code>&lt;div&gt;</code> se utiliza a menudo como un contenedor para otros elementos HTML.
+ El elemento <code>&lt;div&gt;</code>tiene atributos pero no son necesarios, los más comunes son style, class y id.
+  para dar estilos al CSS, al bloque de contenido. </p>
+  <p>El elemento <code>&lt;span&gt;</code> se utiliza como un contenedor para agrupar un texto en línea. El elemento <code>&lt;span&gt;</code>, también tiene atrivutos, pero tampoco son necesarios, los más comunes son style, class y id.
+   para dar estilos al CSS, al bloque de contenido.</p> 
+   <br>
+   <br>
+   
+   <h2 id"Etiquetas">Etiquetas</h2> 
+    <table>
+
+        <tr> 
+           <th>Etiqueta</th>
+           <th>Definición</th>
+           <th>Ejemplo</th>
+           <th>Utilización</th>
+        </tr> 
+        <tr>
+            <td> <b> &lt;div&gt;</b> </td>
+            <td> Define una división del contenido a nivel de bloques </td>
+            <td> <div style="border: 1px solid blue;">Esto es un elemento de bloque </div></td>
+            <td> <b> &lt;div&gt;</b> Esto es un elemento de bloque <b>&lt;/div&gt; </b> </td>
+		 </tr>
+        
+        <tr>
+            <td> <b>&lt;span&gt;</b> </td>
+            <td> Define un elemento espandido (de línea)</td>
+            <td> Esto es un<span style="border: 1px solid blue; border-radius: 0;"> elemento espandido </span></td>
+            <td> Esto es un <b>&lt;span&gt;</b>elemento en línea<b>&lt;/span&gt;</b> </td>
+        </tr>
+        <br>
+        <br> 
+    </table>
+    <br>
+    <br>
+    <br>
+	<br>
+    <div class="nota">
+	<strong>Nota:</strong>Un elemento bloque siempre empieza en una nueva línea y ocupa todo el ancho disponible(se extiende hacia la izq. y a la der.tanto como sea posible). Un elemento línea no se inicia en una nueva línea 
+	</div>
+        <br>
+        <br>
+		<br>
+<div style="overflow:hidden;border: 1px solid red; margin: 0 auto; width: 70%;">
+	
+	<div style="float: left; width: 25%;border: 1px solid blue; margin: 10px;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum commodo turpis, nec interdum odio efficitur id. Quisque porttitor at sem id lobortis. Quisque sollicitudin rhoncus commodo.</div>
+	
+	<div style="float: left; width: 25%;border: 1px solid blue;margin: 10px;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum commodo turpis, nec interdum odio efficitur id. Quisque porttitor at sem id lobortis. Quisque sollicitudin rhoncus commodo.</div>
+	
+	<div style="float: left; width: 25%;border: 1px solid blue;margin: 10px;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum commodo turpis, nec interdum odio efficitur id. Quisque porttitor at sem id lobortis. Quisque sollicitudin rhoncus commodo.</div>
+</div>
+<br>
+<br>
+
+<div style="overflow:hidden;border: 1px solid red; margin: 0 auto; width: 70%;">
+	
+	<div style="float: left; width: 25%; background-color: aquamarine;"><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum commodo turpis, nec interdum odio efficitur id. Quisque porttitor at sem id lobortis. Quisque sollicitudin rhoncus commodo.</div></div>
+	
+	<div style="float: left; width: 25%; background-color: aquamarine;"><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum commodo turpis, nec interdum odio efficitur id. Quisque porttitor at sem id lobortis. Quisque sollicitudin rhoncus commodo.</div></div>
+	
+	<div style="float: left; width: 25%; background-color: aquamarine;"><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum commodo turpis, nec interdum odio efficitur id. Quisque porttitor at sem id lobortis. Quisque sollicitudin rhoncus commodo.</div></div>
+</div>
+	<br>
+	<br>
+	<div style="overflow:hidden;border: 1px solid red; margin: 0 auto; width: 70%;">
+	
+	<div style="float: left; width: 33.33%; background-color: lightblue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum commodo turpis, nec interdum odio efficitur id. Quisque porttitor at sem id lobortis. Quisque sollicitudin rhoncus commodo.</div>
+	
+	<div style="float: left; width: 33.33%; background-color: lightblue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum commodo turpis, nec interdum odio efficitur id. Quisque porttitor at sem id lobortis. Quisque sollicitudin rhoncus commodo.</div>
+	
+	<div style="float: left; width: 33.33%; background-color: lightblue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum commodo turpis, nec interdum odio efficitur id. Quisque porttitor at sem id lobortis. Quisque sollicitudin rhoncus commodo.</div>
+</div>
+	<br>
+    <br>
+    <div>
+   <h2 id"Etiquetas de codigo de computadora">Etiquetas de codigo de computadora</h2>
+      <ul>
+      <li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador</li>    
+      <li>La etiqueta <code>&lt;kdb&gt;</code> representa comandos de entrada del usuario</li>
+      <li>La etiqueta <code>&lt;samp&gt;</code> representa la salda de un programa o sistema informático</li>
+      <li>La etiqueta <code>&lt;var&gt;</code> se utiliza como expresión o variable de la programación</li>
+    </ul>
+    <br>
+    
+   	  <table>
+    	  <tr> 
+           <th>Etiqueta</th>
+           <th>Descripción</th>
+           <th>Visualización</th>
+           <th>Utilización</th>
+        </tr> 
+        <tr>
+            <td> <b> &lt;code&gt;</b> </td>
+            <td> Define un codigo de programación </td>
+            <td> Usar este codigo <code>function(main)</code></td>
+            <td> Usar este codigo<b>&lt;code&gt;</b> funtion (main)<b>&lt;/code&gt;</b></td>
+        </tr>
+        <tr>
+                <td> <b> &lt;Kbd&gt;</b> </td>
+                <td> Define una entrada de teclado</td>
+                <td> Para guardar <kbd>Ctrl</kbd>+<kbd>s</kbd></td>
+                <td> Paraguardar <b>&lt;Kbd&gt;</b>Ctrl<b>&lt;/Kbd&gt;</b>+<b>&lt;Kbd&gt;</b>S<b>&lt;/Kbd&gt;</b> </td>
+        </tr>
+        <tr>
+            <td> <b> &lt;samp&gt;</b> </td>
+            <td> Define la salida de la computadora </td>
+            <td> <samp> Error: página no encontrada</samp></td>
+            <td> <b>&lt;samp&gt;</b>Error: página no encontrada<b>&lt;samp&gt;</b></td>
+        </tr>
+        <tr>
+            <td> <b> &lt;var&gt;</b> </td>
+            <td> Define una variable aritmética </td>
+            <td> Einstein escribió<var>E=mc 2</var></td>
+            <td> Einstein escribió<b>&lt;var&gt;</b> E=mc2<b>&lt;var&gt;</b></td>
+        </tr>
+     </table>
+    
+     <br>
+     <br>
+     
+    </div >
+    <div class="nota"><p><strong>Nota:</strong> Las etiquetas de código de computadora cambian el tipo de letra simulando código informático</p>
+    </div>
+    
+    <br>
+    <br>
+    
+    
+    <br>
+    <br>  
+<div id="divpadre">
+	
+	<div id="divhijo1">
+		<p><b>Errores HTML</b></p>
+		<p><samp>Error 404 not found </samp></p>
+		<p><samp>Error 400 bad request </samp></p>
+		<p><samp>Error 401 Unauthorized </samp></p>
+		<p><samp>Error 403 Forbiden </samp></p>
+	</div>
+	
+	<div id="divhijo2"> 
+	<p><b>Comandos básicos</b></p>
+	<p><kbd>Ctrl</kbd>+<kbd>S</kbd> para guardar</p>	
+	<p><kbd>Ctrl</kbd>+<kbd>C</kbd> para copiar	</p>
+	<p><kbd>Ctrl</kbd>+<kbd>V</kbd> para pegar	</p>
+	<p><kbd>Ctrl</kbd>+<kbd>X</kbd> para cortar </p>
+	
+	</div>
+	
+	<div id="divhijo3"><p>
+	<p><b>Formulas históricas</b></p>
+	<p> <var> a²+b²=c²</var> Pitágoras </p>
+	<p><var>E= mc²</var>Einstein</p>
+	<p><var>F= G [(m1 x m2)/r²]</var> Newton</p>
+	<p><var>iħ (∂/∂t).ψ=Hψ</var> Schodinger</p>
+		</p></div>
+</div> 
+   
+   <br>
+   <br> 
+   <a href="#arriba"><small>Arriba</small></a>
+    <footer>Por Alba C.</footer>
+</body>
+</html>
