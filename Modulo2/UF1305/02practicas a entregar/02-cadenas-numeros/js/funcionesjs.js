@@ -103,4 +103,21 @@ function comparar() {
 		
 	
 }
-	
+
+//Ej10 
+
+function tablamulti() {				
+			var y = document.getElementById("number10").value;
+			if( y > 0 && y < 11){
+				var x = "";
+				var resultado = "";						
+				for( x = 1 ; x <= 10 ; x++){
+					resultado +=  y + " x " + x + " = " + (x * y) + "<br>";  			
+					}
+				document.getElementById("etiqueta10").innerHTML= "Tabla del " + y + "<br>" + resultado;
+							}
+			else{
+				document.getElementById("etiqueta10").innerHTML= "introduzca un número del 1 al 10";
+				document.getElementById("etiqueta10").style.color = "red";
+			}				
+		}
